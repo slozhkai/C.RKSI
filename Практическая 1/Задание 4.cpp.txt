@@ -1,0 +1,21 @@
+#include <iostream>
+#include <math.h>
+
+using namespace std;
+
+int main()
+{   
+    double 
+        x = 0.4e-2, 
+        y = -0.875, 
+        z = 0.475e2;
+        
+    double 
+        first = pow(abs(cos(x)-cos(y)), (1+2*pow(sin(2)))),
+        second = (1+z+(pow(z, 2))/2+(pow(z, 2))/3+(pow(z, 2))/4);
+        
+    double s = first * second;
+    cout<< s;
+
+    return 0;
+}
