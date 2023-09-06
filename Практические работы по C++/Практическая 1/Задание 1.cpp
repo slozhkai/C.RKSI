@@ -3,12 +3,11 @@
 
 using namespace std;
 
-int qwqqq()
+int main()
 {   
-    double x = -4.5, y = -.75e-4, z = -0.845e2;
-    double first = cbrt(9. + pow(x - y, 2)) / (pow(x, 2) + pow(y, 2)  + 2.) ;
-    double second = exp(abs(x-y)) * pow(tan(z), 3);
-    cout<< first - second;
-
+    double x = 14.26, y = -1.22, z = 3.5e-2;
+    double first = 2.*cos(x-2./3.)/(1./2.+pow(sin(y), 2)) ;
+    double second = (1.+ pow(z, 2)/(3.-pow(z, 2)/5.));
+    cout<< first * second;
     return 0;
 }
